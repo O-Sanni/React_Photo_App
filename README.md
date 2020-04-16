@@ -1,68 +1,32 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### React Photo App 
+ 
 
-## Available Scripts
+    User Details
 
-In the project directory, you can run:
+    When viewing the details of a user, the user detail page should include the following: 
 
-### `npm start`
+    The most recently uploaded photo. There should be a small thumbnail image of the photo and the date it was uploaded. 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    The photo of the user that has the most comments on it. There should be a small thumbnail of the photo and the comments count.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+    A user should be able to delete any of the things that he or she owns on the site. This includes:
 
-### `npm test`
+    Any of hers/his/their photos
+    Any comments that she/he/they have made (this includes comments made on other users’ photos)
+    The entire user account. If the user chooses to delete her/his/their account, there should be a final warning prompt, followed by the user being logged out and all the details of his/her account destroyed from the database. This means that, in addition to the User object being destroyed, you should also handle the deleting of all photos and comments created by this user. Essentially, we will treat the user as never having existed in the first place. Other things added for other stories implemented (e.g. activities, visibility, mentions, etc) should also be covered.
+    Hints:
+    When a user deletes various objects, you need to consider any associated information that must also be deleted. This will be done on the server and you may have to do some research into how to properly destroy objects with associations. 
+    Make sure a user can’t delete anything that he or she does not own.
+    
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    User Story
+    Implement a like button for each photo to allow the user to like the photo. It can be a button, icon or whatever you like.
+    Clicking on the like button makes the user like the photo (and visually changes the like button to an unlike button). Clicking the unlike button on a photo that has already been liked by the same user should unlike the photo.
+    The number of likes of a photo should never be greater than the total number of users.
+    If a user has already liked a photo, there should be some sort of visual indication on the page that the user has already liked the photo. This visual indication should be removed if the user unlikes the photo.
+    Next to the like button, it should display the number of likes for that photo. This count should be updated (visually) immediately upon liking or unliking the photo.
+    A user’s photos page should be sorted by the number of likes in descending order (most liked photos at the top). If photos have the same number of likes, sort by the timestamp in reverse chronological order (most recent first). This doesn’t need to change immediately when a user likes / unlikes a photo - you are allowed to wait until the page refreshes.
+    Favorite list of photos for users
+    A logged-in user should be able to favorite photos and have a user-specific list of favorites appear on a new page (path: /favorites). That page should be dedicated to showing a list of favorited photos of that user. Users should be able to remove favorited photos from that list.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+    Users should be able to intuitively mark any photo as favorite by clicking on a button appearing next to any photo shown on any user's list of photos.

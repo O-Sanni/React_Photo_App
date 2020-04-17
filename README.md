@@ -30,4 +30,7 @@
 
     Users should be able to intuitively mark any photo as favorite by clicking on a button appearing next to any photo shown on any user's list of photos.
 
-    
+## Prototyping
+    1.Log in/Sign-up
+        Create a separate component, LogIn/SignUp, write class and extends React.Component, in return have two divs; first div is for log in , second will have Sign Up button linked to Sign up page, Log in div will have form with the following fields: Log in, Password and a submit Button;
+        

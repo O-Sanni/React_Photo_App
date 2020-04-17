@@ -32,5 +32,6 @@
 
 ## Prototyping
     1.Log in/Sign-up
-        Create a separate component, LogIn/SignUp, write class and extends React.Component, in return have two divs; first div is for log in , second will have Sign Up button linked to Sign up page, Log in div will have form with the following fields: Log in, Password and a submit Button;
-        
+        Create a separate component, LogIn_SignUp, write class and extends React.Component, in return have two divs; first div is for log in , second will have Sign Up button linked to Sign up page, Log in div will have form with the following fields: Log in, Password and a submit Button;
+    2. Sign up Page
+        Create separate component, SignUpPage, write class will extend React.Component, main div will have the form with the following fields: name, photo upload, user name, email, password, re-enter password, DOB, and submit button. 

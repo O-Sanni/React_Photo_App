@@ -1,6 +1,5 @@
 ### React Photo App 
- 
-
+## Requirements:
     User Details
 
     When viewing the details of a user, the user detail page should include the following: 
@@ -30,3 +29,5 @@
     A logged-in user should be able to favorite photos and have a user-specific list of favorites appear on a new page (path: /favorites). That page should be dedicated to showing a list of favorited photos of that user. Users should be able to remove favorited photos from that list.
 
     Users should be able to intuitively mark any photo as favorite by clicking on a button appearing next to any photo shown on any user's list of photos.
+
+    

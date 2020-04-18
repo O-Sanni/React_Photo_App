@@ -8,7 +8,9 @@ class SignUpPage extends React.Component{
     render(){
         return(
             <div id="mainDivSignUp">
-                <
+                <form id="signUpForm">
+                    <input 
+                </form>
             </div>
         )
     }

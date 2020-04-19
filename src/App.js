@@ -12,10 +12,10 @@ class App extends React.Component {
    }async getWineList(){
 
     try{
-        const list= await axios.get(`https://my-json-server.typicode.com/OlgaSannikov/repo/users`)
+        const list= await axios.get(`https://my-json-server.typicode.com/OlgaSannikov/React_Photo_App/users`)
         this.setState({userInfo: list.data});
         console.log(this.state.userInfo)
-    }
+    } 
     catch(error){
         console.log(error);
     }

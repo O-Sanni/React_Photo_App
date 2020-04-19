@@ -9,6 +9,27 @@
         "dob":"07/09/1987",
         "photo": "https://cdn.pixabay.com/photo/2014/08/31/18/50/vintage-432309_960_720.jpg",
         "images":["https://cdn.pixabay.com/photo/2014/08/31/18/50/vintage-432309_960_720.jpg","https://cdn.pixabay.com/photo/2014/08/31/18/50/vintage-432309_960_720.jpg","https://cdn.pixabay.com/photo/2014/08/31/18/50/vintage-432309_960_720.jpg"]
+      },
+      {
+        "id": 2,
+        "username": "hello",
+        "password": "hello",
+        "name": "hello",
+        "e-mail": "some@email.com",
+        "dob":"07/09/1987",
+        "photo": "https://cdn.pixabay.com/photo/2014/08/31/18/50/vintage-432309_960_720.jpg",
+        "images":["https://cdn.pixabay.com/photo/2014/08/31/18/50/vintage-432309_960_720.jpg","https://cdn.pixabay.com/photo/2014/08/31/18/50/vintage-432309_960_720.jpg","https://cdn.pixabay.com/photo/2014/08/31/18/50/vintage-432309_960_720.jpg"]
+     
+      },
+      {
+      "id": 3,
+      "username": "hello",
+      "password": "hello",
+      "name": "hello",
+      "e-mail": "some@email.com",
+      "dob":"07/09/1987",
+      "photo": "https://cdn.pixabay.com/photo/2014/08/31/18/50/vintage-432309_960_720.jpg",
+      "images":["https://cdn.pixabay.com/photo/2014/08/31/18/50/vintage-432309_960_720.jpg","https://cdn.pixabay.com/photo/2014/08/31/18/50/vintage-432309_960_720.jpg","https://cdn.pixabay.com/photo/2014/08/31/18/50/vintage-432309_960_720.jpg"]
       }
     ]
    

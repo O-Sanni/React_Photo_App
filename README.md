@@ -39,3 +39,6 @@
         Create a separate component, LogIn_SignUp, write class and extends React.Component, in return have two divs; first div is for log in , second will have Sign Up button linked to Sign up page, Log in div will have form with the following fields: Log in, Password and a submit Button;
     2. Sign up Page
         Create separate component, SignUpPage, write class will extend React.Component, main div will have the form with the following fields: name, photo upload, user name, email, password, re-enter password, DOB, and submit button. 
+
+## Resources
+    1.https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date

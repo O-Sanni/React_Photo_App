@@ -22,13 +22,17 @@ async getUserList(){
     componentDidMount(){
         this.getWineList();
     }
-    get
+    getTimeStamp(){
+        let timeStamp=new Date();
+        return timeStamp.Date.now();
+    }
     getImages(){
         let images=this.state.user.map((response,index)=>{
             return (<div id={index}>
              <img src={response.image} alt="image" />
              <p>{getTimeStamp()}</p>
              </div> )});
+             
              return images;
     }
     }

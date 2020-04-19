@@ -14,8 +14,8 @@ async getUserList(){
         try{
             const listOfUsers= await axios.get(`http://my-json-server.typicode.com/OlgaSannikov/React_Photo_App/users/${this.state.userId}`)
             this.setState({user: listOfUsers.data});
-            console.log(this.state.user);
-            console.log(this.state.user.photo);
+            // console.log(this.state.user);
+            // console.log(this.state.user.images[0]);
         }
         catch(error){
             console.log(error);
@@ -29,14 +29,15 @@ async getUserList(){
         return timeStamp.Date.now();
     }
     getImages(){
-        // console.log(this.state.user.photo)
-        let images=this.state.user.image.map((response,index)=>{
-            return (<div id={index}>
-             <img src={response} alt="image" />
-             {/* <p>{this.getTimeStamp()}</p> */}
-             </div> )});
+        console.log(this.state.user)
+        console.log(this.state.user.images);
+        // let images=this.state.user.images.map((response,index)=>{
+        //     return (<div id={index}>
+        //      <img src={response} alt="image" />
+        //      <p>{this.getTimeStamp()}</p>
+        //      </div> )});
 
-             return images;
+        //      return images;
     }
     
     checkIfUserExists(){
@@ -45,7 +46,7 @@ async getUserList(){
     }
     else{
         return (<div>
-                    {console.log(this.state.user.photo)}
+                    {/* {console.log(this.state.user.photo)} */}
                     <img src={this.state.user.photo} alt="profile photo" />
                     {/* <p>Username</p>
                     <h4>{this.state.wineList.year}</h4>

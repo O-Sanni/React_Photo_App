@@ -29,6 +29,10 @@
     A logged-in user should be able to favorite photos and have a user-specific list of favorites appear on a new page (path: /favorites). That page should be dedicated to showing a list of favorited photos of that user. Users should be able to remove favorited photos from that list.
 
     Users should be able to intuitively mark any photo as favorite by clicking on a button appearing next to any photo shown on any user's list of photos.
+## Wireframe
+![alt text](https://github.com/OlgaSannikov/React_Photo_App/blob/master/src/assets/home.jpg)
+![alt text](https://github.com/OlgaSannikov/React_Photo_App/blob/master/src/assets/LogInandSignup.jpg)
+![alt text](https://github.com/OlgaSannikov/React_Photo_App/blob/master/src/assets/user.jpg)
 
 ## Prototyping
     1.Log in/Sign-up

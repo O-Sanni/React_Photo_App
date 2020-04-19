@@ -29,14 +29,14 @@ async getUserList(){
     else{
         return (<div>
                     
-                    <img src={this.state.} alt="profile photo" />
-                    <p>Year: {this.state.wineList.year}</p>
-                    <p>Grapes: {this.state.wineList.grapes}</p>
-                    <p>Country: {this.state.wineList.country}</p>
-                    <p>Region: {this.state.wineList.region}</p>
-                    <p>Price: {this.state.wineList.price}</p>
-                    <p>Desctiption: {this.state.wineList.description}</p> 
-                    <p>Wine Id: {this.state.wineList.id}</p> 
+                    <img src={this.state.user.photo} alt="profile photo" />
+                    <p>Username</p>
+                    <h4>{this.state.wineList.year}</h4>
+                    <p>Date of Birth</p> 
+                    <h4>{this.state.wineList.grapes}</h4>
+                    <p>E-mail</p>
+                    <h4>{this.state.wineList.country}</h4>
+                    
                 </div>)
     }
     }

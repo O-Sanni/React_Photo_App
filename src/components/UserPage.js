@@ -47,7 +47,7 @@ async getUserList(){
     else{
         return (<div>
                     {/* {console.log(this.state.user.photo)} */}
-                    <img src={this.state.user.images[0]} alt="profile photo" />
+                    <img src={this.state.user.images[0].url} alt="profile photo" />
                     {/* <p>Username</p>
                     <h4>{this.state.wineList.year}</h4>
                     <p>Date of Birth</p> 

@@ -8,13 +8,13 @@
         "email": "will_smith@mail.com",
         "dob":"09/25/1968",
         "photo": "https://images.fandango.com/ImageRenderer/300/0/redesign/static/img/default_poster.png/0/images/masterrepository/performer%20images/p66596/willsmith169638915.jpg",
-        "images":{
-                    "0":"https://cdn.pixabay.com/photo/2014/07/04/19/15/biker-384178__340.jpg",
-                    "1":"https://cdn.pixabay.com/photo/2015/09/08/21/02/superbike-930715__340.jpg",
-                    "2":"https://cdn.pixabay.com/photo/2014/11/05/01/56/off-road-buggy-517311__340.jpg",
-                    "3":"https://cdn.pixabay.com/photo/2019/10/19/19/15/motorcycle-4562069__340.jpg",
-                    "4":"https://cdn.pixabay.com/photo/2020/04/12/17/11/bike-5035035__340.jpg"
-                  }
+        "images":[{
+                    "img0":"https://cdn.pixabay.com/photo/2014/07/04/19/15/biker-384178__340.jpg",
+                    "img1":"https://cdn.pixabay.com/photo/2015/09/08/21/02/superbike-930715__340.jpg",
+                    "img2":"https://cdn.pixabay.com/photo/2014/11/05/01/56/off-road-buggy-517311__340.jpg",
+                    "img3":"https://cdn.pixabay.com/photo/2019/10/19/19/15/motorcycle-4562069__340.jpg",
+                    "img4":"https://cdn.pixabay.com/photo/2020/04/12/17/11/bike-5035035__340.jpg"
+                  }]
       },
       {
         "id": 2,
@@ -24,13 +24,13 @@
         "email": "keanu_reeves@mail.com",
         "dob":"07/09/1987",
         "photo": "https://m.media-amazon.com/images/M/MV5BNjUxNDcwMTg4Ml5BMl5BanBnXkFtZTcwMjU4NDYyOA@@._V1_UY209_CR10,0,140,209_AL_.jpg",
-        "images":{
-                    "0":"https://cdn.pixabay.com/photo/2016/04/01/12/16/car-1300629__340.png",
-                    "1":"https://cdn.pixabay.com/photo/2018/04/07/16/30/auto-3298890__340.jpg",
-                    "2":"https://cdn.pixabay.com/photo/2019/08/09/06/12/car-racing-4394450__340.jpg",
-                    "3":"https://cdn.pixabay.com/photo/2016/07/13/20/43/auto-1515464__340.jpg",
-                    "4":"https://cdn.pixabay.com/photo/2020/03/31/05/53/studio-4986378__340.jpg"
-                  }
+        "images":[{
+                    "img0":"https://cdn.pixabay.com/photo/2016/04/01/12/16/car-1300629__340.png",
+                    "img1":"https://cdn.pixabay.com/photo/2018/04/07/16/30/auto-3298890__340.jpg",
+                    "img2":"https://cdn.pixabay.com/photo/2019/08/09/06/12/car-racing-4394450__340.jpg",
+                    "img3":"https://cdn.pixabay.com/photo/2016/07/13/20/43/auto-1515464__340.jpg",
+                    "img4":"https://cdn.pixabay.com/photo/2020/03/31/05/53/studio-4986378__340.jpg"
+                  }]
      
       },
       {
@@ -41,13 +41,13 @@
       "email": " sandra_bullock@mail.com",
       "dob":"07/26/1964",
       "photo": "https://m.media-amazon.com/images/M/MV5BMTI5NDY5NjU3NF5BMl5BanBnXkFtZTcwMzQ0MTMyMw@@._V1_UY209_CR1,0,140,209_AL_.jpg",
-      "images":{
-                  "0":"https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg",
-                  "1":"https://cdn.pixabay.com/photo/2017/02/08/17/24/butterfly-2049567__340.jpg",
-                  "2":"https://cdn.pixabay.com/photo/2015/08/15/00/58/hills-889131__340.jpg",
-                  "3":"https://cdn.pixabay.com/photo/2017/01/09/00/49/winter-1964361__340.jpg",
-                  "4":"https://cdn.pixabay.com/photo/2018/07/14/17/46/raccoon-3538081__340.jpg"
-                }
+      "images":[{
+                  "img0":"https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg",
+                  "img1":"https://cdn.pixabay.com/photo/2017/02/08/17/24/butterfly-2049567__340.jpg",
+                  "img2":"https://cdn.pixabay.com/photo/2015/08/15/00/58/hills-889131__340.jpg",
+                  "img3":"https://cdn.pixabay.com/photo/2017/01/09/00/49/winter-1964361__340.jpg",
+                  "img4":"https://cdn.pixabay.com/photo/2018/07/14/17/46/raccoon-3538081__340.jpg"
+                }]
       }
     ]
    

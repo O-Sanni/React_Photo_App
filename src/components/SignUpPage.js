@@ -35,22 +35,22 @@ class SignUpPage extends React.Component{
     }
     user_nameHandler(){
         event.preventDefault();
-        this.setState({country: event.target.value});
+        this.setState({user_name: event.target.value});
         
     }
     emailHandler(){
         event.preventDefault();
-        this.setState({country: event.target.value});
+        this.setState({email: event.target.value});
         
     }
     dobHandler(){
         event.preventDefault();
-        this.setState({country: event.target.value});
+        this.setState({dob: event.target.value});
         
     }
     photoHandler(){
         event.preventDefault();
-        this.setState({country: event.target.value});
+        this.setState({photo: event.target.value});
         
     }
 

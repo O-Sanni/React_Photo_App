@@ -14,8 +14,8 @@ async getUserList(){
         try{
             const listOfUsers= await axios.get(`http://my-json-server.typicode.com/OlgaSannikov/React_Photo_App/users/${this.state.userId}`)
             this.setState({user: listOfUsers.data});
-            // console.log(this.state.user);
-            // console.log(this.state.user.images[0]);
+            console.log(this.state.user);
+            console.log(this.state.user.images[0]);
         }
         catch(error){
             console.log(error);

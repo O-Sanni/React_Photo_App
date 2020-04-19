@@ -57,8 +57,9 @@ class SignUpPage extends React.Component{
     render(){
         return(
             <div id="mainDivSignUp">
-                <form id="signUpForm">
-                    <input 
+                <form id="signUpForm" onSubmit={this.submitButton}>
+                    <p>Name</p>
+                    <input type="text" value={this.state.name} onChange={this.nameHandler} placeholder="name" />
                 </form>
             </div>
         )

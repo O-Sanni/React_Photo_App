@@ -8,17 +8,17 @@ class SignUpPage extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            name:null,
-            password:null,
-            user_name:null,
-            email: null,
-            dob:null,
-            photo: null,
+            name:"",
+            password:"",
+            user_name:"",
+            email: "",
+            dob:"",
+            photo: "",
             images: []
         }
         this.nameHandler=this.nameHandler.bind(this);
         this.passwordHandler=this.passwordHandler.bind(this);
-        this.re_passwordHandler=this.re_passwordHandler.bind(this);
+        // this.re_passwordHandler=this.re_passwordHandler.bind(this);
         this.user_nameHandler=this.user_nameHandler.bind(this);
         this.emailHandler=this.emailHandler.bind(this);
         this.dobHandler=this.dobHandler.bind(this);
@@ -36,7 +36,7 @@ class SignUpPage extends React.Component{
     }
     // re_passwordHandler(event){
     //     event.preventDefault();
-    //     if (event.target.value === this.state.)
+        // if (event.target.value === this.state.)
     // }
     user_nameHandler(event){
         event.preventDefault();
@@ -58,6 +58,14 @@ class SignUpPage extends React.Component{
         this.setState({photo: event.target.value});
         
     }
+    submitButton(event){
+        event.preventDefault();
+        axios.post(`https://my-json-server.typicode.com/OlgaSannikov/React_Photo_App/users/`,this.state)
+        .then(res => {
+          console.log(res);
+      })
+      .catch(e => {console.log(e);}) 
+      }
 
     render(){
         return(
@@ -69,8 +77,8 @@ class SignUpPage extends React.Component{
                     <input type="text" value={this.state.username} onChange={this.usernameHandler} placeholder="user name" />
                     <p>Password</p>
                     <input type="text" value={this.state.password} onChange={this.passwordHandler} placeholder="password" />
-                    <p>Re-enter password</p>
-                    <input type="text" value={this.state.re_password} onChange={this.re_passwordHandler} placeholder="re-enter password" />
+                    {/* <p>Re-enter password</p>
+                    <input type="text" value={this.state.re_password} onChange={this.re_passwordHandler} placeholder="re-enter password" /> */}
                     <p>E-mail</p>
                     <input type="text" value={this.state.email} onChange={this.emailHandler} placeholder="e-mail" />
                     <p>Enter your date of birth</p>
@@ -83,3 +91,5 @@ class SignUpPage extends React.Component{
         )
     }
 }
+
+export default SignUpPage;

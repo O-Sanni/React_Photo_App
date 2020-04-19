@@ -34,10 +34,10 @@ class SignUpPage extends React.Component{
         this.setState({password: event.target.value});
         
     }
-    re_passwordHandler(event){
-        event.preventDefault();
-        if (e)
-    }
+    // re_passwordHandler(event){
+    //     event.preventDefault();
+    //     if (event.target.value === this.state.)
+    // }
     user_nameHandler(event){
         event.preventDefault();
         this.setState({user_name: event.target.value});
@@ -66,14 +66,14 @@ class SignUpPage extends React.Component{
                     <p>Name</p>
                     <input type="text" value={this.state.name} onChange={this.nameHandler} placeholder="name" />
                     <p>User name</p>
-                    <input type="text" value={this.state.name} onChange={this.nameHandler} placeholder="name" />
+                    <input type="text" value={this.state.username} onChange={this.usernameHandler} placeholder="user name" />
                     <p>Password</p>
-                    <input type="text" value={this.state.name} onChange={this.nameHandler} placeholder="name" />
-                    <p>Name</p>
-                    <input type="text" value={this.state.name} onChange={this.nameHandler} placeholder="name" />
-                    <p>Name</p>
-                    <input type="text" value={this.state.name} onChange={this.nameHandler} placeholder="name" />
-                    <p>Name</p>
+                    <input type="text" value={this.state.password} onChange={this.passwordHandler} placeholder="password" />
+                    <p>Re-enter password</p>
+                    <input type="text" value={this.state.re_password} onChange={this.re_passwordHandler} placeholder="re-enter password" />
+                    <p>E-mail</p>
+                    <input type="text" value={this.state.email} onChange={this.emailHandler} placeholder="e-mail" />
+                    <p>Enter your date of birth</p>
                     <input type="text" value={this.state.name} onChange={this.nameHandler} placeholder="name" />
                     <p>Name</p>
                     <input type="text" value={this.state.name} onChange={this.nameHandler} placeholder="name" />

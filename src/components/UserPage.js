@@ -36,8 +36,8 @@ async getUserList(){
                     <h4>{this.state.wineList.grapes}</h4>
                     <p>E-mail</p>
                     <h4>{this.state.wineList.country}</h4>
-                    
-                </div>)
+                    {this.getImages()}
+                    </div>
     }
     }
         render(){   

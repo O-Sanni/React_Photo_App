@@ -22,13 +22,14 @@ async getUserList(){
     componentDidMount(){
         this.getWineList();
     }
+    get
     getImages(){
         let images=this.state.user.map((response,index)=>{
             return (<div id={index}>
-             <h3 id={index+"15"} >{response.name}</h3>
-             <img id={index+"20"} src={response.picture} alt="wine" />
+             <img src={response.image} alt="image" />
+             <p>{getTimeStamp()}</p>
              </div> )});
-             return wines;
+             return images;
     }
     }
     checkIfUserExists(){

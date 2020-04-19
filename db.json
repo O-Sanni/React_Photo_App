@@ -25,7 +25,7 @@
       "name": " Sandra Bullock",
       "email": " sandra_bullock@mail.com",
       "dob":"07/26/1964",
-      "photo": "https://m.media-amazon.com/images/M/MV5BMTI5NDY5NjU3NF5BMl5BanBnXkFtZTcwMzQ0MTMyMw@@._V1_UY209_CR1,0,140,209_AL_.jpg",
+      "photo": "https://m.media-amazon.com/images/M/MV5BMTI5NDY5NjU3NF5BMl5BanBnXkFtZTcwMzQ0MTMyMw@@._V1_UY209_CR1,0,140,209_AL_.jpg"
       }
     ],
    "images":[
@@ -33,16 +33,16 @@
               "id":"11",
               "userid":"1",
               "imgurl":"https://cdn.pixabay.com/photo/2014/07/04/19/15/biker-384178__340.jpg"
-                },
-                {"id":"12",
+            },
+            {"id":"12",
                   "userid":"1",
                   "imgurl":"https://cdn.pixabay.com/photo/2015/09/08/21/02/superbike-930715__340.jpg"
-                  },
-                  { "id":"13",
+            },
+            { "id":"13",
                     "userid":"1",
                     "imgurl":"https://cdn.pixabay.com/photo/2014/11/05/01/56/off-road-buggy-517311__340.jpg"
-                  },
-                  {
+            },
+            {
                     "id":"14",
                     "userid":"1",
                     "imgurl":"https://cdn.pixabay.com/photo/2019/10/19/19/15/motorcycle-4562069__340.jpg"

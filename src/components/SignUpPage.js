@@ -8,6 +8,7 @@ class SignUpPage extends React.Component{
     constructor(props){
         super(props);
         this.state={
+            id: Math.floor(Math.random()*50),
             name:"",
             password:"",
             user_name:"",
@@ -23,6 +24,7 @@ class SignUpPage extends React.Component{
         this.emailHandler=this.emailHandler.bind(this);
         this.dobHandler=this.dobHandler.bind(this);
         this.photoHandler=this.photoHandler.bind(this);
+        this.submitButton=this.submitButton.bind(this);
     }
     nameHandler(event){
         event.preventDefault();

@@ -28,8 +28,8 @@ async getUserList(){
     }
     else{
         return (<div>
-                    <h3>{this.state.wineList.name.toUpperCase()}</h3>
-                    <img src={this.state.wineList.picture} alt="wine" />
+                    
+                    <img src={this.state.} alt="profile photo" />
                     <p>Year: {this.state.wineList.year}</p>
                     <p>Grapes: {this.state.wineList.grapes}</p>
                     <p>Country: {this.state.wineList.country}</p>

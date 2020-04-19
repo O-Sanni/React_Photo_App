@@ -20,7 +20,7 @@ class LogIn_SignUp extends React_Compoent{
                 <p>User name</p>
                     <input type="text" value={this.state.userName} onChange={this.userNameHandler} placeholder="user name"/>
                 <p>Password</p>
-                <input
+                <input />
                 </form>
             </div>
         )

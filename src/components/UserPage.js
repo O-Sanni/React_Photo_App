@@ -29,8 +29,11 @@ async getUserList(){
         return timeStamp.Date.now();
     }
     getImages(){
-        console.log(this.state.user)
-        console.log(this.state.user.images);
+        // console.log(this.state.user)
+        // console.log(this.state.user.images);
+        let images=this.state.user.images.map(res=>{
+            console.log(res)
+        })
         // let images=this.state.user.images.map((response,index)=>{
         //     return (<div id={index}>
         //      <img src={response} alt="image" />

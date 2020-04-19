@@ -60,6 +60,19 @@ class SignUpPage extends React.Component{
                 <form id="signUpForm" onSubmit={this.submitButton}>
                     <p>Name</p>
                     <input type="text" value={this.state.name} onChange={this.nameHandler} placeholder="name" />
+                    <p>User name</p>
+                    <input type="text" value={this.state.name} onChange={this.nameHandler} placeholder="name" />
+                    <p>Name</p>
+                    <input type="text" value={this.state.name} onChange={this.nameHandler} placeholder="name" />
+                    <p>Name</p>
+                    <input type="text" value={this.state.name} onChange={this.nameHandler} placeholder="name" />
+                    <p>Name</p>
+                    <input type="text" value={this.state.name} onChange={this.nameHandler} placeholder="name" />
+                    <p>Name</p>
+                    <input type="text" value={this.state.name} onChange={this.nameHandler} placeholder="name" />
+                    <p>Name</p>
+                    <input type="text" value={this.state.name} onChange={this.nameHandler} placeholder="name" />
+                
                 </form>
             </div>
         )

@@ -5,6 +5,55 @@ import React from "react";
 import axios from "axios";
 
 class SignUpPage extends React.Component{
+    constructor(props){
+        super(props);
+        this.state={
+            name:null,
+            password:null,
+            user_name:null,
+            email: null,
+            dob:null,
+            photo: null,
+            images: []
+        }
+        this.nameHandler=this.nameHandler.bind(this);
+        this.passwordHandler=this.passwordHandler.bind(this);
+        this.user_nameHandler=this.user_nameHandler.bind(this);
+        this.emailHandler=this.emailHandler.bind(this);
+        this.dobHandler=this.dobHandler.bind(this);
+        this.photoHandler=this.photoHandler.bind(this);
+    }
+    nameHandler(){
+        event.preventDefault();
+        this.setState({name: event.target.value});
+        
+    }
+    passwordHandler(){
+        event.preventDefault();
+        this.setState({password: event.target.value});
+        
+    }
+    user_nameHandler(){
+        event.preventDefault();
+        this.setState({country: event.target.value});
+        
+    }
+    emailHandler(){
+        event.preventDefault();
+        this.setState({country: event.target.value});
+        
+    }
+    dobHandler(){
+        event.preventDefault();
+        this.setState({country: event.target.value});
+        
+    }
+    photoHandler(){
+        event.preventDefault();
+        this.setState({country: event.target.value});
+        
+    }
+
     render(){
         return(
             <div id="mainDivSignUp">

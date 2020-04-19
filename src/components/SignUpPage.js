@@ -74,10 +74,10 @@ class SignUpPage extends React.Component{
                     <p>E-mail</p>
                     <input type="text" value={this.state.email} onChange={this.emailHandler} placeholder="e-mail" />
                     <p>Enter your date of birth</p>
-                    <input type="text" value={this.state.name} onChange={this.nameHandler} placeholder="name" />
-                    <p>Name</p>
-                    <input type="text" value={this.state.name} onChange={this.nameHandler} placeholder="name" />
-                
+                    <input type="text" value={this.state.dob} onChange={this.dobHandler} placeholder="mm/dd/yyyy" />
+                    <p>Enter URL with your photo</p>
+                    <input type="text" value={this.state.photo} onChange={this.photoHandler} placeholder="url" />
+                    <input type="submit" />
                 </form>
             </div>
         )

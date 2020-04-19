@@ -22,6 +22,15 @@ async getUserList(){
     componentDidMount(){
         this.getWineList();
     }
+    getImages(){
+        let images=this.state.user.map((response,index)=>{
+            return (<div id={index}>
+             <h3 id={index+"15"} >{response.name}</h3>
+             <img id={index+"20"} src={response.picture} alt="wine" />
+             </div> )});
+             return wines;
+    }
+    }
     checkIfUserExists(){
         if(this.state.userId===null){
             return "Sorry, information is not availiable or user page has been deleted.";

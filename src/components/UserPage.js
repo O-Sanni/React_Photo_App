@@ -6,20 +6,14 @@ class UserPage extends React.Components{
         super(props);
         this.state={
             userId: this.props,
-            user:"",
-            profilePhoto:"",
-            userName: "",
-            dob: "",
-            email: "",
-            images: []
+            user:null,
         }
         
     }
 async getUserList(){
-    
         try{
-            const list= await axios.get(`http://myapi-profstream.herokuapp.com/api/466840/wines/${this.state.id}`)
-            this.setState({wineList: list.data});
+            const listOfUsers= await axios.get(`http://my-json-server.typicode.com/OlgaSannikov/React_Photo_App/users/${this.state.userId}`)
+            this.setState({user: listOfUsers.data});
         }
         catch(error){
             console.log(error);
@@ -28,9 +22,9 @@ async getUserList(){
     componentDidMount(){
         this.getWineList();
     }
-    checkIfWineExists(){
-        if(this.state.wineList===null){
-            return "Sorry, information is not availiable or wine has been deleted.";
+    checkIfUserExists(){
+        if(this.state.userId===null){
+            return "Sorry, information is not availiable or user page has been deleted.";
     }
     else{
         return (<div>
@@ -48,7 +42,7 @@ async getUserList(){
     }
         render(){   
     
-            return (<div>{this.checkIfWineExists()}</div> 
+            return (<div>{this.checkIfUserExists()}</div> 
             );
         }
     }

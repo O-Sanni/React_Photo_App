@@ -18,12 +18,19 @@ class UserPage extends React.Component{
         }
         
     }
-async getUserInfo(){
+// async getUserInfo(){
+//         try{
+//             const listOfUserInfo= await axios.get(`http://my-json-server.typicode.com/OlgaSannikov/React_Photo_App/users/${this.props.id}`);
+//             this.setState({user: listOfUserInfo.data});
+//             console.log(this.state.user)
+//         }
+//         catch(error){
+//             console.log(error);
+//         }
+//     }
+    async getUserImages(){
         try{
-            const listOfUserInfo= await axios.get(`http://my-json-server.typicode.com/OlgaSannikov/React_Photo_App/users/${this.props.id}`);
-            console.log(listOfUserInfo.data);
             const listOfUserImages=await axios.get(`http://my-json-server.typicode.com/OlgaSannikov/React_Photo_App/images?userid=${this.props.id}`);
-            this.setState({user: listOfUserInfo.data});
             this.setState({images: listOfUserImages.data});
         }
         catch(error){
@@ -31,8 +38,16 @@ async getUserInfo(){
         }
     }
     componentDidMount(){
-        this.getUserInfo();   
-    }
+        //this.getUserInfo();  
+        this.getUserImages(); 
+      axios.get(`http://my-json-server.typicode.com/OlgaSannikov/React_Photo_App/users/1`).
+      then(res=>{
+          this.setState({user: res.data});
+                    //console.log(this.state.user)
+      }).catch(error=>{
+                    console.log(error);
+    })
+}
     getTimeStamp(){
         let timeStamp= new Date();
         return (timeStamp.toDateString()+" time: "+timeStamp.toLocaleTimeString()+" "+timeStamp.getUTCMilliseconds()+"ms")    
@@ -54,7 +69,6 @@ async getUserInfo(){
                     <p>Image added on: {this.getTimeStamp()}</p>
                 </div>)   })
                 return (<div>
-                       {/* <p>Username: {this.user.id}</p> */}
                        {images}
                 </div>)
                 
@@ -62,9 +76,12 @@ async getUserInfo(){
     }
     
         render(){   
-            
+           
             return (<div>
-
+            <p>{this.state.user.name}</p>
+            <p>{this.state.user.username}</p>
+            <p>{this.state.user.dob}</p>
+            <img src={this.state.user.photo}/>
             {this.checkIfUserExists()}
             </div> 
             );

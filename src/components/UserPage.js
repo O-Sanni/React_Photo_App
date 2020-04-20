@@ -33,12 +33,11 @@ async getUserInfo(){
         this.getUserInfo();   
     }
     getTimeStamp(){
-        let month=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+        let month=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
         let timeStamp= new Date();
-        let date=
+        return (timeStamp.toDateString()+" time: "+timeStamp.toLocaleTimeString()+" "+timeStamp.getUTCMilliseconds()+"ms")
         
         
-        return timeStamp.getUTCMilliseconds();
     }
 //     getImages(){
 //         console.log(this.state.images[0].id);
@@ -65,11 +64,13 @@ async getUserInfo(){
             {
                 console.log(res.id)
                 console.log(this.getTimeStamp())
-            })
-        // return (<div>
-                    
+          
+        return (<div>
+                    <img src={res.imgurl} />
+                    <p>Image added on: {this.getTimeStamp()}</p>
              
-        //         </div>)
+                </div>)   })
+                return images;
     }
     }
     

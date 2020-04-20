@@ -33,14 +33,12 @@ async getUserInfo(){
         this.getUserInfo();   
     }
     getTimeStamp(){
-        const month=["Jan","Feb","Apr","M"]
-        let timeStamp=Date.now();
-
-
-
-
-
-        return timeStamp;
+        let month=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+        let timeStamp= new Date();
+        let date=
+        
+        
+        return timeStamp.getUTCMilliseconds();
     }
 //     getImages(){
 //         console.log(this.state.images[0].id);
@@ -62,6 +60,7 @@ async getUserInfo(){
             return "Sorry, information is not availiable or user page has been deleted.";
     }
     else{
+
         let images=this.state.images.map(res=>
             {
                 console.log(res.id)

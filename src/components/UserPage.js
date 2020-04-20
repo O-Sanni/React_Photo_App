@@ -18,16 +18,6 @@ class UserPage extends React.Component{
         }
         
     }
-// async getUserInfo(){
-//         try{
-//             const listOfUserInfo= await axios.get(`http://my-json-server.typicode.com/OlgaSannikov/React_Photo_App/users/${this.props.id}`);
-//             this.setState({user: listOfUserInfo.data});
-//             console.log(this.state.user)
-//         }
-//         catch(error){
-//             console.log(error);
-//         }
-//     }
     async getUserImages(){
         try{
             const listOfUserImages=await axios.get(`http://my-json-server.typicode.com/OlgaSannikov/React_Photo_App/images?userid=${this.props.id}`);
@@ -37,10 +27,9 @@ class UserPage extends React.Component{
             console.log(error);
         }
     }
-    componentDidMount(){
-        //this.getUserInfo();  
+    componentDidMount(){  
         this.getUserImages(); 
-      axios.get(`http://my-json-server.typicode.com/OlgaSannikov/React_Photo_App/users/1`).
+      axios.get(`http://my-json-server.typicode.com/OlgaSannikov/React_Photo_App/users/${this.props.id}`).
       then(res=>{
           this.setState({user: res.data});
                     //console.log(this.state.user)

@@ -1,3 +1,6 @@
+//this.state will have 1 state for images
+//images will be downloaded using axios
+
 import React from "react";
 import axios from "axios";
 
@@ -13,8 +16,6 @@ async getUserImages(){
     try{
         const listOfUserImages=await axios.get(`http://my-json-server.typicode.com/OlgaSannikov/React_Photo_App/images`);
         this.setState({images: listOfUserImages.data});
-        // this.state.images.map(res=>{
-            // console.log(res.imgurl)})
     }
     catch(error){
         console.log(error);

@@ -3,6 +3,7 @@ import axios from "axios";
 import './App.css';
 import SignUpPage from "./components/SignUpPage";
 import UserPage from "./components/UserPage";
+import MainPage from "./components/MainPage";
 class App extends React.Component {
   constructor(props)
   {
@@ -13,7 +14,8 @@ class App extends React.Component {
 render(){
   return (
     <div className="App">
-     <SignUpPage />
+    <MainPage />
+     {/* <SignUpPage /> */}
      {/* <UserPage id="3" /> */}
     </div>
   );

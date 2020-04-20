@@ -11,16 +11,15 @@ class SignUpPage extends React.Component{
             id: Math.floor(Math.random()*50),
             name:"",
             password:"",
-            user_name:"",
+            username:"",
             email: "",
             dob:"",
-            photo: "",
-            images: []
+            photo: ""
         }
         this.nameHandler=this.nameHandler.bind(this);
         this.passwordHandler=this.passwordHandler.bind(this);
         // this.re_passwordHandler=this.re_passwordHandler.bind(this);
-        this.user_nameHandler=this.user_nameHandler.bind(this);
+        this.usernameHandler=this.usernameHandler.bind(this);
         this.emailHandler=this.emailHandler.bind(this);
         this.dobHandler=this.dobHandler.bind(this);
         this.photoHandler=this.photoHandler.bind(this);
@@ -40,9 +39,9 @@ class SignUpPage extends React.Component{
     //     event.preventDefault();
         // if (event.target.value === this.state.)
     // }
-    user_nameHandler(event){
+    usernameHandler(event){
         event.preventDefault();
-        this.setState({user_name: event.target.value});
+        this.setState({username: event.target.value});
         
     }
     emailHandler(event){

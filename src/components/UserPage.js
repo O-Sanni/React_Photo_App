@@ -21,6 +21,7 @@ class UserPage extends React.Component{
 async getUserInfo(){
         try{
             const listOfUserInfo= await axios.get(`http://my-json-server.typicode.com/OlgaSannikov/React_Photo_App/users/${this.props.id}`);
+            console.log(listOfUserInfo.data);
             const listOfUserImages=await axios.get(`http://my-json-server.typicode.com/OlgaSannikov/React_Photo_App/images?userid=${this.props.id}`);
             this.setState({user: listOfUserInfo.data});
             this.setState({images: listOfUserImages.data});
@@ -33,50 +34,37 @@ async getUserInfo(){
         this.getUserInfo();   
     }
     getTimeStamp(){
-        let month=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
         let timeStamp= new Date();
-        return (timeStamp.toDateString()+" time: "+timeStamp.toLocaleTimeString()+" "+timeStamp.getUTCMilliseconds()+"ms")
-        
-        
+        return (timeStamp.toDateString()+" time: "+timeStamp.toLocaleTimeString()+" "+timeStamp.getUTCMilliseconds()+"ms")    
     }
-//     getImages(){
-//         console.log(this.state.images[0].id);
-
-//         // console.log(this.state.images[0].id)
-//         // return <p>{this.state.images[0].imgurl}</p>
-//         // let images=this.state.user.map(response=>{
-//         // console.log(response.images)
-//         // })
-//         //     return (<div>
-//         //      <img src={response} alt="image" />
-//         //      <p>{this.getTimeStamp()}</p>
-//         //      </div> )});
-//         //      return images;
-//  }
     
     checkIfUserExists(){
         if(this.state.userId==="" || this.state.images===""){
             return "Sorry, information is not availiable or user page has been deleted.";
     }
     else{
-
+        console.log(this.user);
         let images=this.state.images.map(res=>
             {
                 console.log(res.id)
                 console.log(this.getTimeStamp())
           
-        return (<div>
+        return (<div>   
                     <img src={res.imgurl} />
                     <p>Image added on: {this.getTimeStamp()}</p>
-             
                 </div>)   })
-                return images;
+                return (<div>
+                       {/* <p>Username: {this.user.id}</p> */}
+                       {images}
+                </div>)
+                
     }
     }
     
         render(){   
             
             return (<div>
+
             {this.checkIfUserExists()}
             </div> 
             );

@@ -5,6 +5,7 @@
 // then if it is not empty  function will return user information and image
 //to render images i will use .map()
 //create function to get time stamp for each image
+//
 
 import React from "react";
 import axios from "axios";
